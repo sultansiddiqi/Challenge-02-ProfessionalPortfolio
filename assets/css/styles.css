@@ -9,22 +9,22 @@
 }
 #about-me{
   padding-top: 300px;
-  flex: auto;
+  display: flex;
 }
 
 #work-font {
-  flex: auto;
+  display: flex;
   font-size: 4.5em;
   padding-top: 200px;
 }
 #my-work{
 font-size: 3.5em;
-flex: auto;
+display: flex;
 }
 
 .aboutmeinfo {
   font-size: 40px;
-  flex: auto;
+  display: flex;
 }
 
 .img {
