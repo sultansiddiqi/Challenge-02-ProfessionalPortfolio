@@ -7,6 +7,29 @@
     font-family: Raleway;
     color: white;
 }
+#about-me{
+  padding-top: 300px;
+}
+
+#work-font {
+  font-size: 4.5em;
+  padding-top: 200px;
+}
+#my-work{
+font-size: 3.5em;
+}
+
+.aboutmeinfo {
+  font-size: 40px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  padding-left: 30%;
+  padding-top: 200px;
+
+}
 
 header {
     z-index: 9999; 
@@ -124,89 +147,27 @@ header h1 {
 a{
     color: white;
 }
+/* WORK SECTION*/
 
-/* SECTION TITLE STYLES START */
-.section-title {
-  padding-top: 200px;
-  padding-left: 50px;
-    font-size: 40px;
-    color: white;
-    padding-bottom: 20px;
-    margin: 0 auto 0 auto;
-    width: 50%;
-    float:left;
-
-  }
-  
-  /* SECTION TITLE STYLES END */
-  
-/*WORK SECTION */
-.grow { 
-	transition: all .2s ease-in-out;
-    opacity: 0.7; 
+.grid {
+  display:grid;
+grid-template-columns: 25% 25% 25% 25%;
+  /*grid-template-columns: auto auto auto auto; */
+padding: 10rem;
 }
-	.grow:hover { 
-    	transform: scale(2.5); 
-        opacity: 1.0;
-    }
 
-  .work {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    width: 80%;
-    border-bottom: 1px solid white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
-    color: white;
-  }
+.grid > div{
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .runbuddy {
-    font-size: 26px;
-  }
-  
-  .work:last-child {
-    border-bottom: none;
-  }
-  
-  .work h3 {
-    color: white;
-    font-size: 26px;
-    flex: 1 30%;
-    align-items: left;
-  }
-  
-  .work-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .work-img {
-    flex: 1 12%;
-    margin-right: 20px;
-    align-items: center;
-  }
-  
-  .work-text {
-    flex: 12;
-    align-items: right;
-  }
-  
-  .work-text p {
-    color: white;
-    font-size: 18px;
-  }
-  
-  .work-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: white;
-    font-weight: bold;
-  }
+.grid >div:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item1 {
+  grid-area: 1 / 1 / span 1 / span 4;
+}
 
   /* WORK SECTION DONE*/
 
@@ -270,12 +231,20 @@ text-shadow: 2px 2px 4px #000000;
 
 .content-section {
     margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+.content-section.container > p {
+  padding: 1.5rem;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1.5em;
+
+.content-section.container  {
+    padding: 1.5em;
     color: white;
     line-height: 1.5;
 }
@@ -384,6 +353,8 @@ footer h3 {
     }
     .section-title {
       width: 100%;
+      font-size: 3.5em;
+  
     }
     
   }
