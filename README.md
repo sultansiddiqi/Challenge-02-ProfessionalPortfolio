@@ -29,9 +29,10 @@ With these points in mind, in this Challenge you’ll set yourself up for future
 
 
 
-## Code was to resemble the following Image
+## Website was designed to resemble the following Images
 
-![Alt text]("Code Refactor Challenge Screenshot Example Image")
+![Alt text](./assets/images/1.png "Screenshot of Deployed Portfolio Website Sample")
+![Alt text](./assets/images/2.png "Screenshot of Deployed Portfolio Website Sample")
 
 ### Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
