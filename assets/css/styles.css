@@ -9,18 +9,22 @@
 }
 #about-me{
   padding-top: 300px;
+  flex: auto;
 }
 
 #work-font {
+  flex: auto;
   font-size: 4.5em;
   padding-top: 200px;
 }
 #my-work{
 font-size: 3.5em;
+flex: auto;
 }
 
 .aboutmeinfo {
   font-size: 40px;
+  flex: auto;
 }
 
 .img {
@@ -168,6 +172,12 @@ padding: 10rem;
 .item1 {
   grid-area: 1 / 1 / span 1 / span 4;
 }
+
+.hvr :hover{
+  background: #555;
+  color: white;
+}
+
 
   /* WORK SECTION DONE*/
 
