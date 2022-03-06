@@ -9,29 +9,26 @@
 }
 #about-me{
   padding-top: 300px;
-  display: flex;
+  padding-left: 150px;
+  font-size: 5em;
 }
 
 #work-font {
-  display: flex;
+  padding-left: 250px;
   font-size: 4.5em;
   padding-top: 200px;
+  
 }
 #my-work{
 font-size: 3em;
-display: flex;
-}
-
-.aboutmeinfo {
-  font-size: 40px;
-  display: flex;
 }
 
 .img {
   display: flex;
-  justify-content: center;
-  padding-left: 15%;
   padding-top: 200px;
+  width: 610px;
+  height: 740px;
+  padding-left: 200px;
 
 }
 
@@ -109,7 +106,7 @@ header h1 {
     align-items: flex-start;
   }
   
-  .hero-cta {
+  .hero-content {
     width: 35%;
     text-align: center;
     margin: 3.5%;
@@ -118,7 +115,7 @@ header h1 {
     line-height: 1.2;
   }
   
-  .hero-cta h2 {
+  .hero-content h2 {
     font-style: italic;
     font-size: 55px;
     color: var(--primary-color);
@@ -151,21 +148,43 @@ header h1 {
 a{
     color: white;
 }
+
+/*About Me*/
+.about{
+  padding-top: 300px;
+  grid-template-columns: 25% 25% 25% ;
+  padding: 10rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.about > div{
+  padding: 5em;
+}
+.aboutme1{
+  grid-area: 1 / 1 / span 3 / span 1;
+}
+
+.aboutme2{
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+
+.aboutme3 {
+  grid-area: 1 / 1 / span 2 / span 3;
+}
+/*End of About Me */
 /* WORK SECTION*/
 
 .grid {
-  display:grid;
+display:grid;
 grid-template-columns: 25% 25% 25% 25%;
-  /*grid-template-columns: auto auto auto auto; */
 padding: 10rem;
 }
 
 .grid > div{
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.grid >div:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -185,7 +204,6 @@ padding: 10rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .nav ul {
@@ -324,14 +342,13 @@ footer h3 {
     text-shadow: none;
   }
 
-  /* media querie with 768px wide */
+  /* media */
 
   @media screen and (max-width: 960px) {
     header {
       padding-bottom: 0;
       justify-content: center;
       /*added this so the header/hero image dont screw around on this */
-      position: relative;
     }
   
     header h1 {
@@ -354,17 +371,49 @@ footer h3 {
       text-align: center;
       width: 100%;
     }
-    .hero-cta {
+    .hero-content {
       width: 100%;
     }
     
-    .hero-cta {
+    .hero-content {
       text-align: center;
     }
     .section-title {
       width: 100%;
       font-size: 3.5em;
   
+    }
+    #about-me{
+      padding-top: 300px;
+      padding-left: 150px;
+      display: flex;
+    }
+    
+    #work-font {
+      padding-left: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 4.5em;
+      padding-top: 200px;
+    }
+    #my-work{
+    font-size: 2em;
+    display: flex;
+    align-content: center;
+    }
+    
+    .aboutmeinfo {
+      font-size: 40px;
+      display: flex;
+    }
+    
+    .img {
+      display: flex;
+      padding-top: 200px;
+      width: 610px;
+      height: 740px;
+      padding-right: 200px;
+    
     }
     
   }
@@ -393,41 +442,11 @@ footer h3 {
     text-align: center;
     width: 100%;
   }
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
   
-  .hero-cta {
-    text-align: center;
-  }
   .section-title {
     width: 80%;
   }
-  .work-info {
-    padding: 30px 15px;
-  }
 
-  .work h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .work-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .work-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .work-text {
-    flex: 100%;  
-  }
 }
 
 /* Media for 575px*/
