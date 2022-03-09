@@ -338,7 +338,7 @@ footer h3 {
   }
   footer div ul li a:hover {
     background-color: rgba(255,255, 255,.3);
-    border-radius: 15px;
+    border-radius:  gi15px;
     text-shadow: none;
   }
 
@@ -447,6 +447,39 @@ footer h3 {
     width: 80%;
   }
 
+    
+}
+#about-me{
+  padding-top: 300px;
+  padding-left: 150px;
+  display: flex;
+}
+
+#work-font {
+  padding-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4.5em;
+  padding-top: 200px;
+}
+#my-work{
+font-size: 2em;
+display: flex;
+align-content: center;
+}
+
+.aboutmeinfo {
+  font-size: 40px;
+  display: flex;
+}
+
+.img {
+  display: flex;
+  padding-top: 200px;
+  width: 610px;
+  height: 740px;
+  padding-right: 200px;
+
 }
 
 /* Media for 575px*/
@@ -459,8 +492,44 @@ footer h3 {
   .section-title {
     width: 95%;
   }
+
+  #about-me{
+    padding-top: 300px;
+    padding-left: 150px;
+    display: flex;
+    font-size: 2m;
+  }
+  
+  #work-font {
+    padding-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4.5em;
+    padding-top: 200px;
+  }
+  #my-work{
+  font-size: 2em;
+  display: flex;
+  align-content: center;
+  }
+  
+  .aboutmeinfo {
+    font-size: 40px;
+    display: flex;
+  }
+  
+  .img {
+    display: flex;
+    padding-top: 200px;
+    width: 610px;
+    height: 740px;
+    padding-right: 200px;
+  
+  }
+
+  .grid{
+    grid-template-columns: auto auto auto auto;
+    padding: 0;
+  }
 }
 
-.work {
-  justify-content: center;
-}
